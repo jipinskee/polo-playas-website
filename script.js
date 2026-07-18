@@ -1,14 +1,19 @@
 const products=[
-{id:'black-gold',name:'Pittsburgh Black & Gold',price:125,category:['mens'],image:'assets/products/black-gold.jpg',tag:'LIMITED EDITION',description:'Black matching hoodie and sweatpants with gold Polo Playas graphics, South Central details and a premium statement finish.',sizes:['XS','S','M','L','XL','2XL','3XL'],stock:{XS:4,S:8,M:12,L:10,XL:7,'2XL':4,'3XL':2}},
-{id:'rare-green',name:'Rare Green Splatter',price:145,category:['mens','rare'],image:'assets/products/rare-green.jpg',tag:'RARE 001 / 1982',description:'Deep green matching set with distressed cream-and-gold splatter details. The rarest presentation in the collection.',sizes:['S','M','L','XL','2XL'],stock:{S:2,M:4,L:4,XL:2,'2XL':1}},
-{id:'royal-blue',name:'Royal Blue',price:120,category:['mens'],image:'assets/products/royal-blue.jpg',tag:'LIMITED COLORWAY',description:'High-energy royal blue matching set with crisp white and navy statement graphics.',sizes:['XS','S','M','L','XL','2XL','3XL'],stock:{XS:5,S:8,M:9,L:9,XL:6,'2XL':3,'3XL':2}},
-{id:'forest-green',name:'Forest Green',price:120,category:['mens'],image:'assets/products/forest-green.jpg',tag:'LIMITED COLORWAY',description:'Clean forest green matching set with cream graphics across the front, back, sleeves and legs.',sizes:['XS','S','M','L','XL','2XL'],stock:{XS:4,S:7,M:9,L:8,XL:5,'2XL':3}},
-{id:'pink-red',name:"Women's Pink / Red",price:95,category:['womens'],image:'assets/products/pink-red.jpg',tag:"WOMEN'S SET",description:'Cropped pink hoodie and matching shorts finished with red Polo Playas graphics and contrast piping.',sizes:['XS','S','M','L','XL'],stock:{XS:4,S:8,M:9,L:5,XL:3}},
-{id:'deep-red',name:'Deep Red',price:120,category:['mens'],image:'assets/products/deep-red.jpg',tag:'PREORDER',description:'Deep red matching set with darker dimensional graphics and signature South Central placement.',sizes:['XS','S','M','L','XL','2XL','3XL'],stock:{XS:3,S:6,M:9,L:8,XL:5,'2XL':3,'3XL':2}},
-{id:'white-gold',name:'White & Gold',price:130,category:['mens'],image:'assets/products/white-gold.jpg',tag:'PREORDER',description:'Bright white matching set with metallic-style gold graphics and premium contrast.',sizes:['XS','S','M','L','XL','2XL'],stock:{XS:3,S:6,M:8,L:7,XL:4,'2XL':2}},
-{id:'orange',name:'Orange',price:120,category:['mens'],image:'assets/products/orange.jpg',tag:'PREORDER',description:'Vibrant orange matching set with white-and-brown graphics across the hoodie and pants.',sizes:['XS','S','M','L','XL','2XL'],stock:{XS:4,S:7,M:8,L:8,XL:5,'2XL':3}},
-{id:'navy',name:'Navy Blue',price:120,category:['mens'],image:'assets/products/navy.jpg',tag:'EARLY DROP',description:'Dark navy matching set with clean white graphics and a strong understated finish.',sizes:['XS','S','M','L','XL','2XL','3XL'],stock:{XS:3,S:7,M:10,L:9,XL:6,'2XL':4,'3XL':2}}
+{id:'black-gold',name:'South Central Black & Gold',price:125,category:['mens'],image:'assets/products/black-gold.jpg',tag:'LIMITED EDITION',description:'Black hoodie and sweatpants set with gold Polo Playas graphics and South Central details.',sizes:['S','M','L','XL','2XL','3XL'],stock:{S:5,M:8,L:10,XL:7,'2XL':4,'3XL':2}},
+
+{id:'velocity-purple',name:'Velocity Purple',price:135,category:['mens','rare'],image:'assets/products/velocity-purple.jpg',tag:'VERY RARE',description:'Purple lightning matching set with icy blue graphics and Los Angeles South Central branding.',sizes:['S','M','L','XL','2XL','3XL'],stock:{S:3,M:5,L:7,XL:5,'2XL':3,'3XL':2}},
+
+{id:'rubidoux',name:'Rubidoux West Riverside',price:130,category:['mens'],image:'assets/products/rubidoux.jpg',tag:'LIMITED DROP',description:'Navy Rubidoux collection featuring West Riverside, blue jay artwork, and bell details.',sizes:['S','M','L','XL','2XL','3XL'],stock:{S:4,M:6,L:8,XL:6,'2XL':3,'3XL':2}},
+
+{id:'navy',name:'Navy Blue',price:120,category:['mens'],image:'assets/products/navy.jpg',tag:'CLASSIC DROP',description:'Clean navy matching set with bold white Polo Playas graphics and South Central back print.',sizes:['S','M','L','XL','2XL','3XL'],stock:{S:5,M:8,L:9,XL:7,'2XL':4,'3XL':2}},
+
+{id:'womens-purple',name:"Women's Purple Set",price:95,category:['womens'],image:'assets/products/womens-purple.jpg',tag:"WOMEN'S SET",description:'Purple cropped hoodie and shorts set with South Central Los Angeles details.',sizes:['XS','S','M','L','XL'],stock:{XS:4,S:7,M:8,L:5,XL:3}},
+
+{id:'pink-red',name:"Women's Pink / Red",price:95,category:['womens'],image:'assets/products/pink-red.jpg',tag:"WOMEN'S SET",description:'Pink cropped hoodie and shorts set with red Polo Playas graphics and contrast trim.',sizes:['XS','S','M','L','XL'],stock:{XS:4,S:8,M:9,L:6,XL:4}},
+
+{id:'white-pink',name:"Women's White / Pink",price:100,category:['womens'],image:'assets/products/white-pink.jpg',tag:"WOMEN'S SET",description:'White cropped hoodie and shorts set with pink Polo Playas embroidery and South Central branding.',sizes:['XS','S','M','L','XL'],stock:{XS:4,S:7,M:8,L:6,XL:4}}
 ];
+
 const $=s=>document.querySelector(s);const $$=s=>[...document.querySelectorAll(s)];const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n);
 let cart=JSON.parse(localStorage.getItem('pp_cart')||'[]');let currentFilter='all',currentSearch='',currentSort='featured',activeProduct=null,promo=localStorage.getItem('pp_promo')||'';
 function saveCart(){localStorage.setItem('pp_cart',JSON.stringify(cart));renderCart()}
