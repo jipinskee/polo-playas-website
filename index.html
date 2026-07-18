@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Polo Playas limited-edition streetwear. Shop hoodies, matching sets, rare colorways and women's sets.">
+  <title>Polo Playas — Only Live Once</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span>FREE US SHIPPING OVER $150</span><i>✦</i><span>LIMITED PREORDERS</span><i>✦</i><span>ONLY LIVE ONCE</span></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Polo Playas home"><img src="assets/logo.png" alt="Polo Playas logo"><span>Polo Playas</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#shop">Shop</a><a href="#new">New drop</a><a href="#story">Our story</a><a href="#faq">Help</a></nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="Search">⌕</button>
+      <a class="ig-link" href="https://www.instagram.com/playasonlyinc/" target="_blank" rel="noreferrer">Instagram</a>
+      <button class="bag-button" id="bagButton">Bag <span id="bagCount">0</span></button>
+      <button class="menu-button" id="menuButton" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <div class="search-panel" id="searchPanel" hidden><div><input id="searchInput" type="search" placeholder="Search colorways, sets, rare drops…"><button id="searchClose" aria-label="Close search">×</button></div></div>
+  <nav class="mobile-menu" id="mobileMenu" hidden><a href="#shop">Shop</a><a href="#new">New drop</a><a href="#story">Our story</a><a href="#faq">Help</a><a href="admin.html">Store dashboard</a></nav>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SOUTH CENTRAL · LIMITED EDITION</p>
+        <h1>PLAYAS ONLY<br><span>LIVE ONCE.</span></h1>
+        <p class="hero-text">Premium matching sets and statement pieces made for people who move with loyalty, pride and confidence.</p>
+        <div class="hero-actions"><a class="button gold" href="#shop">Shop the collection</a><button class="button outline" data-view="black-gold">View featured set</button></div>
+        <div class="hero-stats"><div><strong>09</strong><span>Colorways</span></div><div><strong>XS–3XL</strong><span>Inclusive sizing</span></div><div><strong>Limited</strong><span>Production runs</span></div></div>
+      </div>
+      <div class="hero-media"><img src="assets/products/black-gold.jpg" alt="Black and gold Polo Playas matching set"><div class="floating-card"><small>FEATURED DROP</small><strong>Pittsburgh Black & Gold</strong><span>$125.00</span><button data-add="black-gold">Quick add</button></div></div>
+    </section>
+
+    <section class="ticker"><div>LOYALTY ✦ PRIDE ✦ RESPECT ✦ UNITY ✦ STRENGTH ✦ COMMITMENT ✦ LOYALTY ✦ PRIDE ✦ RESPECT ✦ UNITY ✦ STRENGTH ✦ COMMITMENT ✦</div></section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-head"><div><p class="eyebrow">SHOP THE COLLECTION</p><h2>Pick your colorway.</h2></div><p>Every set includes signature front, sleeve, back and pant graphics. Quantities shown are demo inventory for this storefront preview.</p></div>
+      <div class="shop-toolbar">
+        <div class="filters" id="filters"><button class="active" data-filter="all">All</button><button data-filter="mens">Men's / Unisex</button><button data-filter="womens">Women's</button><button data-filter="rare">Rare</button></div>
+        <select id="sortSelect" aria-label="Sort products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name</option></select>
+      </div>
+      <p class="results-label" id="resultsLabel"></p>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="drop-banner" id="new"><div><p class="eyebrow">NEW SEASON FEATURE</p><h2>Rare Green Splatter.</h2><p>A limited distressed colorway built different from the core collection.</p><button class="button gold" data-view="rare-green">Shop rare drop</button></div><img src="assets/products/rare-green.jpg" alt="Rare green Polo Playas set"></section>
+
+    <section class="benefits"><article><strong>01</strong><h3>Limited production</h3><p>Small runs preserve exclusivity and keep every drop collectible.</p></article><article><strong>02</strong><h3>Secure checkout ready</h3><p>The demo checkout is complete; connect Stripe or Shopify before taking live payments.</p></article><article><strong>03</strong><h3>Pickup or shipping</h3><p>Customers can select US shipping or local pickup during checkout.</p></article></section>
+
+    <section class="story" id="story"><div class="story-images"><img src="assets/products/navy.jpg" alt="Navy Polo Playas set"><img src="assets/products/pink-red.jpg" alt="Pink women's Polo Playas set"></div><div><p class="eyebrow">THE MOVEMENT</p><h2>More than clothing.</h2><p>“Playas only live once” represents making your one life count. The designs combine South Central identity, bold old-English lettering and matching silhouettes that demand attention.</p><blockquote>BUILT ON LOYALTY.<br>DRIVEN BY RESPECT.</blockquote><a class="text-link" href="https://www.instagram.com/playasonlyinc/" target="_blank" rel="noreferrer">Follow @playasonlyinc ↗</a></div></section>
+
+    <section class="faq" id="faq"><div><p class="eyebrow">CUSTOMER CARE</p><h2>Questions before ordering?</h2><p>These policies are launch-ready placeholders and should be replaced with the owners' official terms.</p></div><div class="faq-list"><details open><summary>How long do preorders take?</summary><p>Estimated fulfillment is 3–5 weeks after the preorder window closes. Customers receive an email when production begins and when the order ships.</p></details><details><summary>What sizes are available?</summary><p>Most unisex sets are available in XS–3XL. The women's cropped set is available in XS–XL. Size availability updates automatically in the cart.</p></details><details><summary>Can I exchange my order?</summary><p>Unused items may be exchanged within 14 days of delivery, subject to availability. Limited and preorder products may not be eligible for refunds.</p></details><details><summary>How does local pickup work?</summary><p>Choose local pickup at checkout. The brand confirms the pickup location and time after the order is prepared.</p></details></div></section>
+
+    <section class="newsletter"><div><p class="eyebrow">DROP ALERTS</p><h2>Get first access.</h2><p>Join the list for release dates, preorder windows and limited colorways.</p></div><form id="newsletterForm"><input id="newsletterEmail" type="email" placeholder="Email address" required><button type="submit">Join list</button></form><span id="newsletterStatus"></span></section>
+  </main>
+
+  <footer><div class="footer-top"><div class="footer-brand"><img src="assets/logo.png" alt=""><strong>Polo Playas</strong><span>Only live once.</span></div><div><h4>Shop</h4><a href="#shop">All products</a><a href="#new">Rare drop</a><a href="#shop">Women's</a></div><div><h4>Support</h4><a href="#faq">Shipping</a><a href="#faq">Returns</a><a href="mailto:orders@poloplayas.com">Contact</a></div><div><h4>Follow</h4><a href="https://www.instagram.com/playasonlyinc/" target="_blank" rel="noreferrer">Instagram</a><a href="admin.html">Demo dashboard</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> Polo Playas</span><span>Privacy · Terms · Accessibility</span></div></footer>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true"><header><div><p class="eyebrow">YOUR BAG</p><h2>Shopping cart</h2></div><button id="cartClose" aria-label="Close cart">×</button></header><div class="cart-items" id="cartItems"></div><div class="empty-cart" id="emptyCart"><h3>Your bag is empty.</h3><p>Add a colorway to start your order.</p><a href="#shop" id="emptyShop">Shop collection</a></div><div class="cart-summary" id="cartSummary" hidden><div class="promo"><input id="promoInput" placeholder="Promo code"><button id="promoButton">Apply</button></div><p id="promoStatus"></p><div><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div><div><span>Estimated shipping</span><strong>Calculated at checkout</strong></div><div class="cart-total"><span>Estimated total</span><strong id="cartTotal">$0.00</strong></div><button class="button gold wide" id="checkoutButton">Checkout</button><small>Taxes and delivery are calculated during checkout.</small></div></aside>
+
+  <dialog class="product-dialog" id="productDialog"><button class="dialog-close" id="productClose" aria-label="Close">×</button><div class="dialog-media"><img id="dialogImage" alt=""></div><div class="dialog-info"><p class="eyebrow" id="dialogTag"></p><h2 id="dialogName"></h2><p class="price" id="dialogPrice"></p><div class="rating">★★★★★ <span>Limited drop</span></div><p id="dialogDescription"></p><label>Size<select id="dialogSize"></select></label><div class="stock-line"><span id="dialogStock"></span><button id="sizeGuideButton">Size guide</button></div><button class="button gold wide" id="dialogAdd">Add to bag</button><ul><li>Matching hoodie and sweatpants unless specified</li><li>Heavyweight fleece-style presentation</li><li>Limited preorder production</li></ul></div></dialog>
+
+  <dialog class="checkout-dialog" id="checkoutDialog"><button class="dialog-close" id="checkoutClose" aria-label="Close checkout">×</button><div class="checkout-layout"><form id="checkoutForm"><div class="checkout-heading"><p class="eyebrow">SECURE CHECKOUT</p><h2>Complete your order.</h2><p>This preview creates a test order. No real payment is charged.</p></div><fieldset><legend>Contact</legend><div class="field-grid"><label class="full">Email<input name="email" type="email" required autocomplete="email"></label><label>First name<input name="firstName" required autocomplete="given-name"></label><label>Last name<input name="lastName" required autocomplete="family-name"></label><label class="full">Instagram handle<input name="instagram" placeholder="@yourname"></label></div></fieldset><fieldset><legend>Delivery</legend><div class="delivery-options"><label><input type="radio" name="delivery" value="ship" checked> Ship order</label><label><input type="radio" name="delivery" value="pickup"> Local pickup</label></div><div class="field-grid" id="addressFields"><label class="full">Street address<input name="address" autocomplete="street-address"></label><label>City<input name="city" autocomplete="address-level2"></label><label>State<input name="state" autocomplete="address-level1"></label><label>ZIP code<input name="zip" inputmode="numeric" autocomplete="postal-code"></label><label>Country<select name="country"><option>United States</option></select></label></div></fieldset><fieldset><legend>Payment</legend><div class="payment-demo"><span>▣</span><div><strong>Card payment placeholder</strong><p>Connect Stripe Checkout, Shopify Payments or Square before launch.</p></div></div><label class="full-checkbox"><input type="checkbox" required> I understand this is a demo order and no payment will be processed.</label></fieldset><button class="button gold wide" type="submit">Place demo order</button><p class="form-error" id="checkoutError"></p></form><aside class="checkout-summary"><h3>Order summary</h3><div id="checkoutItems"></div><div><span>Subtotal</span><strong id="checkoutSubtotal"></strong></div><div><span>Shipping</span><strong id="checkoutShipping"></strong></div><div><span>Estimated tax</span><strong id="checkoutTax"></strong></div><div class="grand-total"><span>Total</span><strong id="checkoutTotal"></strong></div></aside></div></dialog>
+
+  <dialog class="success-dialog" id="successDialog"><div class="success-mark">✓</div><p class="eyebrow">ORDER RECEIVED</p><h2>You're locked in.</h2><p id="successText"></p><button class="button gold" id="successClose">Continue shopping</button></dialog>
+
+  <dialog class="size-dialog" id="sizeDialog"><button class="dialog-close" id="sizeClose">×</button><p class="eyebrow">SIZE GUIDE</p><h2>Unisex set sizing</h2><table><thead><tr><th>Size</th><th>Chest</th><th>Waist</th></tr></thead><tbody><tr><td>XS</td><td>32–34</td><td>26–28</td></tr><tr><td>S</td><td>35–37</td><td>29–31</td></tr><tr><td>M</td><td>38–40</td><td>32–34</td></tr><tr><td>L</td><td>41–43</td><td>35–37</td></tr><tr><td>XL</td><td>44–47</td><td>38–41</td></tr><tr><td>2XL</td><td>48–51</td><td>42–45</td></tr><tr><td>3XL</td><td>52–55</td><td>46–49</td></tr></tbody></table><small>Measurements are placeholders in inches. Replace with manufacturer measurements before launch.</small></dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
